@@ -4,7 +4,9 @@
 public ListNode deleteAtHead(ListNode head) {
     if(head == null || head.data == head.next.data) return null;
     int headData = head.data;
-    while(head.next.data != headData) head = head.next;
+    while(head.next.data != headData) {
+        head = head.next;
+    }
     head.next = head.next.next;
     return head.next;
 }

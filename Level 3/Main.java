@@ -21,6 +21,9 @@ public class Main {
 	    int length=len;
 	    int pos=0;
 	    int toDel = len - n;
+	    if(toDel == len) {
+	    	return head.next;
+	    }
 	    while(toDel != pos++) {
 	        curr = curr.next;
 	        if(curr == null) return head;
